@@ -1,0 +1,109 @@
+/* ==========================================
+   TABLETS
+========================================== */
+@media (min-width:768px){
+    /* === navbar === */
+    .menu-btn{
+        display:none;
+    }
+    .navbar{
+        gap:2rem;
+    }
+    .logo img {
+        height: 110px;
+    }
+    .nav-links{
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        width: auto;
+        padding: 0;
+        margin-left: auto;
+
+        background: transparent;
+
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+    .header-cta-btn{
+        display:inline-flex;
+        align-items:center;
+    }
+    .hero{
+        padding:7rem 0;
+    }
+
+    .hero-text{
+        padding:3rem;
+    }
+
+    .hero h1{
+        font-size:3.3rem;
+    }
+
+    .hero-buttons{
+        flex-direction:row;
+        justify-content:center;
+    }
+    .hero-buttons a{
+        padding:1rem 8rem;
+    }
+     .mission-vision,
+     .features-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* .why-us{
+        grid-template-columns:repeat(2,1fr);
+    } */
+}
+
+
+/* ==========================================
+   DESKTOPS
+========================================== */
+
+@media (min-width:1024px){
+    .logo span{
+        display:block;
+        font-size: 1.5rem;
+    }
+    main{
+        padding-top:2rem;
+    }
+    .hero .container{
+        width:min(90%,1200px);
+        margin:auto;
+        padding:0;
+    }
+
+    .hero-content{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        align-items:center;
+        gap:4rem;
+    }
+
+    .hero-text{
+        text-align:left;
+        padding:0;
+    }
+
+    .hero p{
+        text-align:left;
+    }
+
+    .hero-buttons{
+        justify-content:flex-start;
+    }
+    .hero-buttons a{
+        padding:1rem 4rem;
+    }
+    .hero-image img{
+        border-radius:1rem;
+        box-shadow:var(--shadow);
+    }
+}

@@ -1,0 +1,57 @@
+
+/* Tablet (768px) */
+@media (min-width:768px){
+
+.hero{
+    padding:7rem 0;
+}
+
+.hero-text{
+    padding:3rem;
+}
+
+.hero h1{
+    font-size:3.3rem;
+}
+
+.hero-buttons{
+    flex-direction:row;
+    justify-content:center;
+}
+
+}
+/* Desktop (1024px) */
+@media (min-width:1024px){
+
+.hero .container{
+    width:min(90%,1200px);
+    margin:auto;
+    padding:0;
+}
+
+.hero-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:4rem;
+}
+
+.hero-text{
+    text-align:left;
+    padding:0;
+}
+
+.hero p{
+    text-align:left;
+}
+
+.hero-buttons{
+    justify-content:flex-start;
+}
+
+.hero-image img{
+    border-radius:1rem;
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+}
