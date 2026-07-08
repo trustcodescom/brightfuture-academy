@@ -51,14 +51,26 @@
     .hero-buttons a{
         padding:1rem 8rem;
     }
-     .mission-vision,
-     .features-grid{
-        grid-template-columns:repeat(2,1fr);
+    .about-content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr; 
+        /* gap: 50px;
+        max-width: 1300px;
+        margin: 0 auto;
+        align-items: start;
+        padding: 60px 20px; */
     }
-
-    /* .why-us{
-        grid-template-columns:repeat(2,1fr);
-    } */
+    .mission-vision {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Set column behavior vertically inside the block */
+        gap: 3rem;
+        margin-top: 35px;
+    }
 }
 
 
@@ -105,5 +117,111 @@
     .hero-image img{
         border-radius:1rem;
         box-shadow:var(--shadow);
+    }
+    .about-content-wrapper {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr; 
+        gap: 30px;
+        max-width: 1300px;
+        margin: 0 auto;
+        align-items: start;
+        padding: 60px 20px;
+    }
+
+    /* 2. Inner split separating the building image and description text */
+    .about-content {
+        display: grid;
+        grid-template-columns: 240px 1fr; 
+        gap: 30px;
+        align-items: start;
+    }
+
+    /* Keep image sharp and matching your layout height */
+    .about-image img {
+        width: 100%;
+        height: 390px; 
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    /* Section text presentation */
+    /* .section-tag {
+        display: inline-block;
+        background-color: #fbbf24;
+        color: #1e3a8a;
+        font-weight: bold;
+        font-size: 0.8rem;
+        padding: 6px 16px;
+        border-radius: 20px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    } */
+
+    .about-info h2 {
+        font-size: 2.2rem;
+        color: #1e3a8a;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+
+    .section-desc {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    /* 3. Mission / Vision placement side-by-side */
+    /* .mission-vision {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    } */
+
+    /* Flex row setup aligning graphic icon on the left, copy on the right */
+    .info-box,
+    .feature{
+        display:flex;
+        gap:15px;
+        align-items:flex-start;
+
+        padding:0;
+        box-shadow:none;
+        background:none;
+    }
+
+    /* Clean, centered structural boxes for icons */
+    .icon,
+    .feature-icon{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        width:48px;
+        height:48px;
+        flex-shrink:0;
+
+        margin:0;
+        gap:0;
+
+        background:#EEF4FF;
+        border-radius:12px;
+    }
+
+    .icon i, .feature-icon i {
+        font-size: 1.25rem;
+        color: #1e3a8a;
+    }
+
+    .info-text p, .feature-text p {
+        margin: 0;
+        font-size: 0.88rem;
+        color: #4b5563;
+        line-height: 1.5;
+    }
+
+    /* 4. Right column 'Why Choose Us' 2x2 grid */
+    .about-info,
+    .why-us{
+        padding:0;
     }
 }
